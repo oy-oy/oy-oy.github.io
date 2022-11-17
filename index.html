@@ -1,0 +1,9 @@
+﻿<script>
+  function calcul(){
+    document.getElementById("answer").innerHTML=(new URL(document.location)).searchParams.get("data");
+  }
+</script>
+
+<body onload="calcul()">
+<p id="answer"></p>
+</body>
